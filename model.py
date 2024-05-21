@@ -23,7 +23,7 @@ class_names = [
 ]
 
 # Load the state dict from the file
-checkpoint = torch.load('savemodel/50epoch_rebalance.pth', map_location='cpu')
+checkpoint = torch.load('savemodel/50epoch_rebalance.pth')
 
 # Extract the model weights from the 'model_state_dict' key
 model_weights = checkpoint['model_state_dict']
